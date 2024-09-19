@@ -1,0 +1,9 @@
+//classicaly ls but you can also do ls -la which shows the secret files and their privileges
+ls -la
+//you can then do the same as in the previous one ./ but then type the beginning of the word because in linux it can't understand spaces and the correct way it to use \ in the space place
+cat ./spaces\ in\ this\ filename
+//it gives us the next password MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+//exit
+exit
+//connect to the next bandit
+ssh -p 2220 bandit3@bandit.labs.overthewire.org
