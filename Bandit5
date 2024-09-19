@@ -1,0 +1,16 @@
+//go in the wanted file which is "inhere"
+cd inhere
+//the problem is that one only file is ascii
+//i have found 2 solutions
+//first solution brute force
+//do this one every file
+file ./-file00
+//then you will find that only file07 is ascii
+//the second solution is to use find to find the file that uses ascii
+find . -type f -exec file {} + |grep ASCII
+//which shows use that file07 is the ascii one
+//then cat its content and gives us the password 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+cat ./-file07
+//then exit and go to shh bandit6
+exit 
+ssh -p 2220 bandit5@bandit.labs.overthewire.org
