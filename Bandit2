@@ -1,0 +1,11 @@
+//First lets see the directories and files
+ls
+//we see that the is only a -
+//in order to execute this we can do it like this
+cat ./-
+//it gives us the password 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+//then exit
+exit
+//and then ssh to the next bandit
+ssh -p 2220 bandit2@bandit.labs.overthewire.org
+
