@@ -1,0 +1,10 @@
+//show the hidden files
+ls -la
+//get into inhere directory
+//search again for the hideen file
+ls -la
+//show its content
+cat ./...Hiding-From-You
+//password 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+exit
+ssh -p 2220 bandit4@bandit.labs.overthewire.org
