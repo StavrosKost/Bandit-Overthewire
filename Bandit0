@@ -1,0 +1,5 @@
+Bandit 0
+//Do this command which establishes an ssh connection to the port 2220 to bandit.labs.overthewire.org
+ssh -p 2220 bandit0@bandit.labs.overthewire.org
+//Then when is requests a password which is given
+bandit0
