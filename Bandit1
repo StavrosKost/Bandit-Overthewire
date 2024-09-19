@@ -1,0 +1,10 @@
+//First see the files in home directory
+ls
+//The wanted file is readme
+//Then show its content using cat
+cat readme
+//it gives us the password ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+//then exit
+exit
+//and go to the next bandit1
+ssh -p 2220 bandit1@bandit.labs.overthewire.org
