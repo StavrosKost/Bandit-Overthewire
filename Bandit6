@@ -1,0 +1,4 @@
+//first go in inhere directory
+cd inhere
+//we need to find the file that is non-executable, human-readble and 1033 bytes
+//we specify that the files type is 
