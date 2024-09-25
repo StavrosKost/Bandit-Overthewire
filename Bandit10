@@ -1,0 +1,6 @@
+//first lets look at the files
+ls
+//we see data.txt and cat it to see whats inside, its non understandable language
+//so we need to find the password
+//what i find works for me is to do this
+hexdump -C data.txt|grep ==
