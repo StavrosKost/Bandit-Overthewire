@@ -1,0 +1,12 @@
+//first ls and see the file data.txt
+ls
+//we can see its a bunch of random text
+//if you play a little with strings, sort and uniq
+//we find that strings data.txt shows the file 
+//the sort sorts the file in the correct order
+//the uniq -u shows only the non duplicated ones
+//IMPORTANT first sort and then the uniq because otherwice it doesn't compare the dublicates
+strings data.txt| sort| uniq -u
+//spits the password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+exit
+ssh -p 2220 bandit9@bandit.labs.overthewire.org
