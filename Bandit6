@@ -1,4 +1,14 @@
+//see the files
+ls -la
 //first go in inhere directory
 cd inhere
+//we see the are 18 files 
 //we need to find the file that is non-executable, human-readble and 1033 bytes
-//we specify that the files type is 
+//we specify that the files type is
+//to explain what it does: it finds the file that is readable, has a size of 1033 byte the -c is for byte and ! -executable means not executable(! means not)
+find . -type f !-executable -readable -size 1033c
+//gives us the message that it is in file maybehere07 and in file2
+//this file gives us the password: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+//then exit and ssh to next
+exit
+ssh -p 2220 bandit6@bandit.labs.overthewire.org
