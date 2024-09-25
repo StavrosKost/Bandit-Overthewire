@@ -1,0 +1,10 @@
+//first we ls and look at the files
+ls
+//we see that only data.txt exists
+//if we cat it we see a lot of words and a random password next to them
+//in order to grap the wanted word millionth
+//we grep which graps -w finds whole words and data.txt is the wanted file
+grep -w millionth data.txt
+//we get the password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+exit
+ssh -p 2220 bandit8@bandit.labs.overthewire.org
