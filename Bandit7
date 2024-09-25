@@ -1,0 +1,13 @@
+//we need to find a given file with the given properties owner bandit7 group bandit6 and size 33c
+//find we need to go to the root
+cd ..
+cd ..
+//now that we are at the root we need to search all files and find the wanted one
+find -group bandit6 -user bandit7 -size 33c
+//in there it gives us a lot of files with permission denied
+//but there is one we can access to ./var/lib/dpkg/info/bandit7.password
+//we cat its content
+cat ./var/lib/dpkg/info/bandit7.password
+//its shows us the correct password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+exit
+ssh -p 2220 bandit7@bandit.labs.overthewire.org
