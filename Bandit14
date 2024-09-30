@@ -1,0 +1,3 @@
+//you just have to connect using the private key that is given to you
+//the -i is to give a file with the private key in it
+ssh -i sshkey.private -p 2220 bandit14@localhost
