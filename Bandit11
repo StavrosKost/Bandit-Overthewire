@@ -1,0 +1,6 @@
+//its a simple base64 decryption
+//if you press base64 --help it says to decrypt base64 just put -d
+base64 -d data.txt
+//The password is: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+exit
+ssh -p 2220 bandit11@bandit.labs.overthewire.org
