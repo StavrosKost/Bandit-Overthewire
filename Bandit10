@@ -4,3 +4,11 @@ ls
 //so we need to find the password
 //what i find works for me is to do this
 hexdump -C data.txt|grep ==
+//then realize you are an idiot and you don't need to do that and its 100 times easier
+//strings shows only the strings in the file
+strings data.txt
+//you see that there are a lot of strings and then just find the ones that are next to ==
+strings data.txt | grep ==
+//it gives us the password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+exit
+ssh -p 2220 bandit10@bandit.labs.overthewire.org
