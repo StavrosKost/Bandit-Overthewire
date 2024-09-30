@@ -1,0 +1,26 @@
+//i hate this one i literally looked it up but i slittely changed it
+//first you need to go to /tmp and create a new directory
+cd /
+cd /tmp
+mkdir yo
+cd 
+//then copy the file and go back to your created directory
+cp data.txt /tmp/yo
+//then hell arrives
+//its literally a ton of decompression
+//so what you do is this
+xxd -r data.txt data2
+//then use gzip
+mv data2 data2.gz
+gzip -d data2.gz
+//and then you will need to see the next type of file 
+file data2
+//it will be one of 3 bz2,gzip or tar
+//if its gzip you rename the file as data2.gz
+//if its bzip2 you rename the file as data2.bz2
+//if its tar you rename the file as data2.tar
+//then use accordingly gzip -d data2.gz or bzip2 -d data2.bz2 or tar -xf data2.tar
+//eventually you will find some files that end in .bin you can skip the rename if its bzip2 or tar but if its gzip you gotta rename it
+//when you find data8 the password is in it: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+exit
+ssh -p 2220 bandit13bandit.labs.overthewire.org
