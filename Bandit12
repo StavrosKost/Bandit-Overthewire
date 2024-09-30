@@ -1,0 +1,8 @@
+//this is a simple ceasar cryptography algorithm where you rotate the letters by 13 letters
+//there are 2 ways 
+//first is to go to google and search for a ceasar cipher decryptor
+//second is to do this which basically says that where is a you put n, where is b you put o etc
+cat data.txt | tr 'a-z' 'n-za-m' | tr 'A-Z' 'N-ZA-M'
+//The password is: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+exit
+ssh -p 2220 bandit12@bandit.labs.overthewire.org
