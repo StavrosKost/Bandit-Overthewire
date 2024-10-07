@@ -1,0 +1,20 @@
+//we see there are no files in the home directory
+ls
+//we go to the root directory
+cd /
+//we search for a bandit14 file that contains the password
+find -name bandit14
+//in the files shown there are 2 that we have permission
+// the first is /home/bandit14
+//the second is /etc/bandit_pass
+//if we go to the second we find the password of the level
+cat bandit14
+//it gives us this password of the previous level important its the previous: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+//then we need to use netcat which is a listening port
+//lets see our ip and we need to connect to port 30000
+nc -v 10.0.1.252 30000
+//then paste the previous password
+MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+//its gives us the new password for the next level: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+exit
+ssh -p 2220 bandit15@bandit.labs.overthewire.org
