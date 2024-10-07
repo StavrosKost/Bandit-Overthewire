@@ -1,0 +1,6 @@
+//we have 2 ways to see the listening ports first is with ss and second is with netstat
+//netstat is the simplest to use
+netstat -a
+//anyone interested in ss is 
+// ss -l | sort | grep 31
+//if you scroll a little bit you can see that there are only 3 ports between 31000-32000
