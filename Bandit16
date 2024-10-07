@@ -1,0 +1,11 @@
+//To be honest i don't know how the fuck i solved it
+//lets see our ip
+ifconfig
+//we use ssh and s_client, -connect is to connect to the ip of this server and the given port
+ssh s_client -connect 10.0.1.252:30001
+//then it says a bunch of stuff in the end we type the hint which is KEYUPDATE and then paste the previous password
+KEYUPDATE
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+//then it gives us the password of the next level: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+exit
+ssh -p 2220 bandit16@bandit.labs.overthewire.org
