@@ -23,4 +23,4 @@ file data2
 //eventually you will find some files that end in .bin you can skip the rename if its bzip2 or tar but if its gzip you gotta rename it
 //when you find data8 the password is in it: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 exit
-ssh -p 2220 bandit13bandit.labs.overthewire.org
+ssh -p 2220 bandit13@bandit.labs.overthewire.org
