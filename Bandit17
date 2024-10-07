@@ -4,3 +4,8 @@ netstat -a
 //anyone interested in ss is 
 // ss -l | sort | grep 31
 //if you scroll a little bit you can see that there are only 3 ports between 31000-32000
+//then realize you are an idiot and didn't need to do that
+//use nmap
+nmap -sV -T4 -p 31000-32000 localhost
+//gives us 5 ports but if we see at the service only 1 does not have echo which is the wanted one
+
