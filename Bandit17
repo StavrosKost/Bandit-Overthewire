@@ -8,5 +8,20 @@ netstat -a
 //use nmap
 nmap -sV -T4 -p 31000-32000 localhost
 //gives us 5 ports but if we see at the service only 1 does not have echo which is the wanted one 31790
-
-
+ncat --ssl localhost 31790
+//then we paste the current password
+kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+//and its gives us an RSA PRIVATE KEY
+//copy the private key
+//go to the tempority directory
+cd /tmp
+//create a new file
+touch private17.key
+//open and paste the private key inside
+nano private17.key
+//save it and exit
+//change the privileges
+chmod 700
+//then you have access to the next level
+//you need to be in the directory to access the key don't forget
+ssh -i private17.key bandit17@localhost -p 2220
