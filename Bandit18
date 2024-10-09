@@ -1,0 +1,7 @@
+//its prett easy you need to use the diff command
+//essentially it compares 2 files
+diff passwords.new passwords.old 
+//and its shows the passwords and the corrent one in this instance is: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+exit
+ssh -p 2220 bandit19@bandit.labs.overthewire.org
+//don't be afraid if you see BYE BYE at the end
