@@ -2,7 +2,7 @@
 //lets see our ip
 ifconfig
 //we use ssh and s_client, -connect is to connect to the ip of this server and the given port
-ssh s_client -connect 10.0.1.252:30001
+openssl s_client -connect 10.0.1.252:30001
 //then it says a bunch of stuff in the end we type the hint which is KEYUPDATE and then paste the previous password
 KEYUPDATE
 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
