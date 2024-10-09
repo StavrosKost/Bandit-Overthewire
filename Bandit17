@@ -7,5 +7,6 @@ netstat -a
 //then realize you are an idiot and didn't need to do that
 //use nmap
 nmap -sV -T4 -p 31000-32000 localhost
-//gives us 5 ports but if we see at the service only 1 does not have echo which is the wanted one
+//gives us 5 ports but if we see at the service only 1 does not have echo which is the wanted one 31790
+
 
