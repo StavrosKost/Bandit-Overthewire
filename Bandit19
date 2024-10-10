@@ -1,0 +1,8 @@
+//when you try to connect to bandit18 it says byebye
+//you try loging in as regularly and and a ls
+ssh bandit18@bandit.labs.overthewire.org -p 2220 ls
+//we see that there is a file
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+//and it gives us the password: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+exit
+ssh bandit19@bandit.labs.overthewire.org -p 2220
