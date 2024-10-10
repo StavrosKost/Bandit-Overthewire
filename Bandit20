@@ -1,0 +1,12 @@
+//lets see what files are in
+ls 
+//we see the bandit20-do file
+//if we cat it we see some things but mostly it is not understandable
+cat bandit20-do
+//if we try to execute it, it says that run a command as another user
+./bandit20-do
+//it should be a hint to try use it as a key to unlock bandit20
+./bandit20-do cat /etc/bandit_pass/bandit20
+//it gives us the password: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+exit 
+ssh bandit20@bandit.labs.overthewire.org
