@@ -1,0 +1,18 @@
+//see what files are there
+ls
+//we see the suconenct which is an executable
+//if we try to execute it,it says that
+//Usage: ./suconnect <portnumber>
+//This program will connect to the given port on localhost using TCP. If it receives the correct password from the other side, the next password is transmitted back.
+ ./suconnect
+//so it also needs a port to be used
+//if we use nmap we can see the open ports
+nmap localhost
+//then we need to set up a listening port using netcat
+//nc is the netcat -l it tells it to listen and -p is to list the port and & means that it will run in the background
+echo "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -lp 1234 &
+//then we execute the suconnect to the now listening port
+./suconnect 1234
+//and it gives us the next password: EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+exit
+ssh bandit21@bandit.labs.overthewire.org -p 2220
