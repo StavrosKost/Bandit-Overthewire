@@ -1,0 +1,14 @@
+//go to /etc/cron.d directory
+cd /etc/cron.d
+//we see some files
+//lets try cat on cronjob_bandit22
+cat cronjob_bandit22
+//we can see that it goes to /usr/bin/cronjob_bandit22.sh
+cd /usr/bin
+//lets see the content of the file
+cat cronjob_bandit22.sh
+//we can see that the password is saved in a file in /tmp lets see if we have access
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+//it gives us the password to the next level: tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+exit
+ssh bandit22@bandit.labs.overthewire.org -p 2220
