@@ -1,1 +1,32 @@
 
+//lets go to the wanted directory
+cd /etc/cron.d
+//we see the file for bandit23 lets cat it
+cat cronjob_bandit23
+//we see we nned to go to the directory /usr/bin
+//lets see the content of the file
+cat /usr/bin/cronjob_bandit23.sh
+//it shows us this message
+/*
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+*/
+//lets try executing it
+./cronjob_bandit23.sh
+//it is copying the files of bnadit22 to a file in /tmp
+//so lets try it ourselfs
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+//it gives us the file inside the /tmp
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+/it gives us the password: 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+exit
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+
+
+
